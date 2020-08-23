@@ -1,0 +1,423 @@
+/*   */
+:root {
+		font-size: calc(0.5em + 0.6vw);
+}
+
+body {
+    background-image: url(imgs/bg.png);
+	font-family: "Times New Roman", Times, serif;
+}
+
+.bodyWrapper {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0.8em;
+}
+
+/*   */
+
+
+.mainWrapper {
+	width: 96%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	margin: 0 auto 3em;
+}
+
+aside {
+	width: 16%;
+}
+
+main {
+	width: 82%;
+}
+
+.rekProd, .rekProdImg {
+	display: block;
+	width: 100%;
+}
+
+.rekProd {
+	margin-bottom: 10px;
+}
+
+.banner {
+	background: white;
+}
+
+.banner  p {
+	border-top: 1px dashed rgb(10,43,88);
+	text-align: center;
+	color: rgb(10,43,88);
+}
+
+.banner p:first-child {
+	border-top: none;
+}
+
+.hotItem {
+	text-shadow: 0 0 5px #fff, 
+		0 0 10px #fff, 
+		0 0 15px #fff, 
+		0 0 20px #fff, 
+		0 0 25px #fff;
+	margin-bottom: 0.6em;
+	color: rgb(10,43,88);
+	text-align: center;
+	font-size: 1.3rem;
+	font-weight: 900;
+}
+
+/******/
+
+.priceList {
+	border-collapse: collapse;
+	text-align: center;
+	color: white;
+}
+
+.priceList caption {
+	background-color: rgba(10, 43, 88,0.8);
+	font-size: 1.4rem;
+	color: white;
+	padding: 7px 0;
+	border: 2px solid #C0C0C0;
+	border-bottom: none;
+}
+
+.priceList td, th {
+	padding: 0 0;
+	border: 2px solid #C0C0C0;
+}
+
+.priceList tr {
+	height: 3.5em;
+}
+
+.priceList th, .caption2{
+	font-weight: 550;
+	font-size: 1.1rem;
+	color: rgb(10, 43, 88);
+	background: rgba(255,255,255,0.4);
+}
+
+.priceList a {
+	display: block;
+	height: 3.4em;
+	color: white;
+	text-decoration: none;
+}
+
+.priceList tr td:nth-of-type(2) {
+	text-decoration: underline;
+}
+
+.priceList a:hover {
+	color: #C0C0C0;
+	transform: scale(1.04);
+	transform: 0.2s;
+}
+
+.priceList tr:nth-of-type(even) {
+	background-color: rgba(0,0,0,0.25);
+}
+
+.capHid2 {
+	display: none;
+}
+
+/*******/
+
+.contactsPage main {
+	padding-left: 6em;
+}
+
+main h2 {
+	font-size: 1.6rem;
+	color: rgb(10,43,88);
+	margin-bottom: 1.2rem;
+}
+
+.contactsPage main a,  .contactsPage main p {
+	font-size: 1.2rem;
+	color: white;
+}
+
+.contactsPage main a {
+	font-style: italic;
+	text-decoration: none;
+	position: relative;
+}
+
+.contactsPage main a::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background: #fff;
+	transition-duration: 0.2s;
+	transform: scaleX(0);
+}
+
+.contactsPage main a:hover:before {
+	transform: scaleX(1);
+}
+
+.contactsPage main a:hover {
+	text-decoration: none;
+}
+
+.contactsPage main hr {
+	width: 80%;
+	margin: 0;
+	margin-top: 40px;
+}
+
+.map {
+	margin-top: 50px;
+	width: 80%;
+	height: 400px;
+	height: 40vw;
+}
+
+/******/
+
+.productionPage div.other {
+	flex: 1 1 50px;
+}
+
+.productionPage main{
+	padding: 2em;
+	flex: 3 1 150px;
+}
+
+.mainWrapper:first-child {
+	flex: 1 1 50px;
+}
+
+.productionPage .mainWrapper {
+	justify-content: space-around;
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.productionPage div.other aside {
+	width: 100%;
+}
+
+.productionPage main img {
+	display: inline-block;
+	box-shadow: 0 0 1.3em rgb(10,43,88);
+	border-radius: 3%;
+	width: 32%;
+	height: auto;
+}
+
+.productionPage main div.figure {
+	margin-bottom: 1em;
+	justify-content: space-between;
+	align-items: center;
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+/******/
+
+.katalogPage main {
+	width: 100%;
+}
+
+.katalogPage main h2 {
+	padding-left: 40px;
+}
+
+.katalogPage main figure {
+	width: 36%;
+	margin-left:32%;
+}
+
+.pdf {
+	width: 20%;
+	margin-left: 40%;
+	margin-bottom: 5px;
+
+}
+
+.katalogPage main figcaption {
+	color: white;
+	font-size: 1.1rem;
+	text-align: center;
+}
+
+.katalogPage aside {
+	display: none;
+}
+
+/****/
+
+.other main {
+	width: 78%;
+	padding-left: 5%;
+	padding-right: 14%;
+}
+
+main dl {
+	font-size: 1.2rem;
+	color: rgb(10,43,88);
+}
+
+main dd {
+	color: white;
+	font-size: 1.4rem;
+	margin: 10px 0;
+}
+
+.prodImg {
+	margin-top: 3em;
+	float: right;
+	width: 26%;
+	height: auto;
+	box-shadow: 0 0 16px 0 black;
+}
+
+.other aside {
+	box-shadow: 0 0 25px 0 black;
+	width: 20%;
+	border-top: 1px solid rgb(10,43,88);
+	border-bottom: 1px solid rgb(10,43,88);
+	border-radius: 5px;
+	background: rgb(10,43,88);
+	background-image: -webkit-linear-gradient(90deg, rgb(10,43,88) 0%, #0172E6 10%, #0172E6 90%, rgb(10,43,88) 100% );
+    background-image:    -moz-linear-gradient(90deg, rgb(10,43,88) 0%, #0172E6 10%, #0172E6 90%, rgb(10,43,88) 100% );
+    background-image:     -ms-linear-gradient(90deg, rgb(10,43,88) 0%, #0172E6 10%, #0172E6 90%, rgb(10,43,88) 100% );
+    background-image:      -o-linear-gradient(90deg, rgb(10,43,88) 0%, #0172E6 10%, #0172E6 90%, rgb(10,43,88) 100% );
+    background-image:         linear-gradient(90deg, rgb(10,43,88) 0%, #0172E6 10%, #0172E6 90%, rgb(10,43,88) 100% );
+}
+
+.other aside a {
+	text-decoration: none;
+	font-size: 1.3vw;
+	padding: 6px 6px;
+	display: block;
+	text-align: center;
+	color: white;
+}
+
+.other aside a:hover {
+	transform: scale(1.07);
+}
+
+.other aside a:last-child {
+	border-bottom:none;
+	padding-bottom: 11px;
+}
+
+.other aside a:first-child {
+	border-top: none;
+	padding-bottom: 11px;
+}
+
+/*****/
+
+.aside2 {
+	display: none;
+}
+
+.aside2gallery {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: top;
+	justify-content: space-between;
+	width: 100%;
+	background: white;
+	padding-top: 0.5em;
+	border-radius: 2px;
+	margin-bottom: 1.5em;
+}
+
+.aside2gallery figure {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+	text-align: center;
+	flex: 1 1 50px;
+	margin: 0.4em;
+}
+
+/*gallery styles*/
+
+.galleryImg {
+	cursor:pointer;
+	transition: 0.3s;
+}
+
+.galleryImg:hover {
+	opacity: 0.7;
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 5vh;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background: rgb(0,0,0);
+	background: rgba(0,0,0,0.9);
+}
+
+#img01 {
+	margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 600px;
+}
+
+#caption {
+	margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 600px;
+	text-align: center;
+	color: #ccc;
+	padding: 10px 0;
+	height: 150px;
+}
+
+.modal-content, #caption {
+	animation-name: zoom;
+	animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+	from{transform:scale(0);}
+	to{transform:scale(1);}	
+}
+
+.close {
+	position: absolute;
+	top: 15px;
+	right: 35px;
+	color: #f1f1f1;
+	font-size: 40px;
+	font-weight: bold;
+	transition: 0.3s;
+}
+
+.close:hover, .close:focus {
+	color: #bbb;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+	.modal-content{
+		width: 100%;
+	}
+}

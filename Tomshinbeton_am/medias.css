@@ -1,0 +1,140 @@
+@media (max-width: 680px) {
+	.mainWrapper {
+		display: block;
+	}
+
+	.hotItem {
+		text-shadow: 0 0 5px #fff, 
+		0 0 10px #fff, 
+		0 0 15px #fff;
+		font-weight: 600;
+	}
+	aside {
+		display: none;
+	}
+	
+	.productionPage .other aside {
+		display: inline-block;	
+	}
+
+	.productionPage .other aside a{
+		font-size: 1em;	
+	}
+
+	.productionPage div.other {
+	flex: 2 1 100px;
+	}
+	
+	.productionPage main {
+		padding-left: 0;
+		padding-right: 1em;
+		flex: 4 1 200px;
+	}
+
+	.aside2 {
+		display: block;
+	}
+
+	header {
+		margin-bottom: 1.8em;
+	}
+
+	main{
+		width: 100%;
+	}
+	.other main {
+		padding-right: 10%;
+		width: 100%;
+	}
+	.contactsPage main {
+		padding-left: 1.2em;
+	}
+
+	.contactsPage main hr {
+		width: 100%;
+	}
+
+	.map {
+		width: 90%;
+		margin-left: 5%;
+		height: 100px;
+		height: 55vw;
+	}
+
+	.priceList td, th {
+		border: 1px solid #C0C0C0;
+	}
+}
+
+@media (max-width:500px) {
+	.priceList tr td:nth-child(1), .priceList tr th:nth-child(1),
+	.priceList tr td:nth-child(3), .priceList tr th:nth-child(3),
+	.priceList tr td:nth-child(4), .priceList tr th:nth-child(4) {
+		display: none;
+	}	
+	
+	.priceList tr.capHid1 {
+		display: none;
+	}
+
+	.priceList tr.capHid2 {
+		display: table-row;
+	}
+
+	.priceList tr {
+		height: 4em;
+	}
+	
+	.headerBg {
+		margin-top: 0.625em;
+	}
+
+	.logoContacts .mail {
+		display: none;
+	}
+	
+	.tel {
+		text-align: right;
+		margin-right: 0.2em;
+	}
+
+	.tel,
+	.mail, 
+	.logo {
+	    z-index: 2;
+	    width: 40%;
+	}
+}
+
+@media (max-width:550px) {
+	.nav {
+		display: none;
+	}
+	
+	.menuWrapper {
+		display: block;
+	}
+
+	.headerBg {
+		padding-bottom: 1em;
+		border-bottom: 1px solid white;
+	}
+	
+	.homePage .homeButton,
+	.katalogPage .katalogButton,
+	.aboutPage .aboutButton,
+	.productionPage .productionButton,
+	.contactsPage .contactsButton {
+	    color: white;
+	    font-weight: 900;
+	    transform: scale(1.1);
+	    background: none;
+	    text-decoration: underline;
+	}
+}
+
+@media (max-width: 360px) {
+	.priceList tr td:nth-child(7), .priceList tr th:nth-child(7) {
+		display: none; 
+	}	
+}

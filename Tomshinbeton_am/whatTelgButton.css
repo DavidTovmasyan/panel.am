@@ -1,0 +1,41 @@
+.telegram {
+    position: fixed;
+    bottom: 7.74em;
+    left: 0.625em;
+
+    width: 2.8em;
+
+    opacity: .6;
+}
+
+.whatsApp {
+    position: fixed;
+    bottom: 4.6875em;
+    left: 0.625em;
+
+    width: 2.8em;
+
+    opacity: .6;
+}
+
+.viber {
+	position: fixed;
+	left: 0.625em;
+	bottom: 0.935em;
+	width: 2.8em;
+	opacity: 0.6;
+
+}
+
+.telegram img,
+.whatsApp img,
+.viber img {
+    width: 2.8em;
+}
+
+.telegram:hover,
+.whatsApp:hover,
+.viber:hover  {
+    opacity: 1;
+}
+

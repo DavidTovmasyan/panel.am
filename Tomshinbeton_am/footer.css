@@ -1,0 +1,22 @@
+.footerHr {
+	margin: 0 auto;
+	width: 100%;
+	margin-bottom: 1.5em;
+}
+
+footer {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	color: white;
+	margin: 0 auto 30px;
+	width: 96%;
+}
+
+.footerInfo {
+	text-align: center;
+}
+
+.footerContacts {
+	text-align: right;
+}

@@ -29,6 +29,7 @@ header {
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 1em;
 
 }
 
@@ -44,11 +45,11 @@ header {
 }
 
 .contDes {
-    color: #B1B1B1;
+    color: #9CAFFF;
 }
 
 .tel:hover, .mail:hover {
-	color: #B1B1B1;
+	color: #9CAFFF;
 }
 
 .tel,
@@ -60,6 +61,7 @@ header {
 
     color: white;
 }
+
 
 /*.logo {
 	border-radius: 2em;
